@@ -19,7 +19,6 @@
         <jetty.version>9.4.28.v20200408</jetty.version>
         <hibernate.version>5.4.0.Final</hibernate.version>
         <h2.version>1.4.200</h2.version>
-        <flyway.version>6.4.2</flyway.version>
 
     </properties>
 
@@ -87,7 +86,7 @@
             <plugin>
                 <groupId>org.flywaydb</groupId>
                 <artifactId>flyway-maven-plugin</artifactId>
-                <version>${flyway.version}</version>
+                <version>6.4.2</version>
                 <configuration>
                     <url>jdbc:h2:file:./db</url>
                     <user>sa</user>
