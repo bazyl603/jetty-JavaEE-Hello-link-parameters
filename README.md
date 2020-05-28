@@ -1,5 +1,6 @@
 # Jetty-JavaEE-Hello-link-parameters
 #### Application accepting parameters in the link as name=... , id=... .
+###### localhost:8080/?name=You&id=2
 ##### Where the first name must be given, and in the id field a number from the language list, "Hello Word !" is displayed by default without any parameters.
 
 ###### id=1  -> English
