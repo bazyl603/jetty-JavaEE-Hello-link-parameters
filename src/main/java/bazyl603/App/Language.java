@@ -9,7 +9,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table( name = "Languages")
-public class Language {
+class Language {
     @Id
     @GeneratedValue(generator = "increment")
     @GenericGenerator(name = "increment", strategy = "increment")
