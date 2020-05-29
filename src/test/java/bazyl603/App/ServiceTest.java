@@ -32,7 +32,7 @@ public class ServiceTest {
     //.prepareGreeting(null, null)
     @Test
     public void test_nullLang_prepareGreeting() {
-        var repo = returnHelloRepository();
+        var repo = backLangIdRepository();
         var ST = new Service(repo);
         var result = ST.prepareGreeting(null, null);
 
@@ -42,7 +42,7 @@ public class ServiceTest {
     //.prepareGreeting(null, "string")
     @Test
     public void test_textLang_prepareGreeting() {
-        var repo = returnHelloRepository();
+        var repo = backLangIdRepository();
         var ST = new Service(repo);
         var result = ST.prepareGreeting(null, "string");
 
@@ -54,6 +54,17 @@ public class ServiceTest {
             @Override
             Optional<Language> findById(Integer id) {
                 return Optional.of(new Language(null, "Hello", null));
+            }
+        };
+    }
+    private LanguageRepo backLangIdRepository() {
+        return new LanguageRepo() {
+            @Override
+            Optional<Language> findById(Integer id) {
+                if (id.equals(Service.BACK_LANG.getId())) {
+                    return Optional.of(new Language(null, "Hello", null));
+                }
+                return Optional.empty();
             }
         };
     }
