@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 import java.util.Optional;
 
 public class Service {
-    static final String BACK_NAME = "Word";
+    static final String BACK_NAME = "World";
     static final Language BACK_LANG = new Language(1, "Hello", "en");
     private final Logger logger = LoggerFactory.getLogger(Service.class);
 
