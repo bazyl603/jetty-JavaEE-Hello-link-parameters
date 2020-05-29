@@ -29,6 +29,16 @@ public class ServiceTest {
         assertEquals("Hello " + name + " !", result);
     }
 
+    //.prepareGreeting(null, null)
+    @Test
+    public void test_nullLang_prepareGreeting() {
+        var repo = returnHelloRepository();
+        var ST = new Service(repo);
+        var result = ST.prepareGreeting(null, null);
+
+        assertEquals("Hello " + Service.BACK_NAME + " !", result);
+    }
+
     private LanguageRepo returnHelloRepository() {
         return new LanguageRepo() {
             @Override
