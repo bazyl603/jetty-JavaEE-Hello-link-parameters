@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "Hello", urlPatterns = {"/*"})
+@WebServlet(name = "Hello", urlPatterns = {"/api/*"})
 public class Servlet extends HttpServlet {
     private static final String NAME = "name";
     private static final String LANG = "lang";
