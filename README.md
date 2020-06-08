@@ -8,7 +8,7 @@
 ###### In the class, Jetty has been embedded in a servlet container, link do stackoverflow:
 https://stackoverflow.com/questions/17246512/embedding-jetty-as-a-servlet-container
 ## In the application I used:
-* Servlets  
+* JavaEE  
 * H2 DataBase  
 * Jetty  
 * Flyway  
