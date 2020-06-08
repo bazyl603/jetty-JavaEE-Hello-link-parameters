@@ -18,5 +18,7 @@ https://stackoverflow.com/questions/17246512/embedding-jetty-as-a-servlet-contai
 * Maven
 * Pure.css
 
+#### !!Warning!! if HTTP error 500 appears on localhost after selecting the option, change the path in the hibernate configuration file and restore the flyway
+
 
 
